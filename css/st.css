@@ -241,6 +241,12 @@ button {
   margin-top: 52px;
 }
 
+@media (max-width: 400px) {
+  .header {
+    display: none;
+  }
+}
+
 .why__conteiner {
   width: 1440px;
   height: 526px;
@@ -459,7 +465,7 @@ button {
   }
   .Practice__conteiner {
     width: 330px;
-    height: 1739px;
+    height: 1800px;
     margin: auto;
     background-color: pink;
   }
