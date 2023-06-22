@@ -134,6 +134,152 @@
 }
 @media(max-width: 400px){
     .header {
-        display: none;
+        max-width: 414px;
+        height: 2026px;
+        background-image: url(../../img/header/back__ground.png);
+        background-repeat: no-repeat;
+        margin: auto;
     }
+    .header__top {
+        @include wh(370px,457px);
+        margin: auto;    
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+            .header__top__nav{
+            @include wh(123px,270px);
+            display: flex;
+            justify-content: center;
+            .header__nav__bar{
+                position: relative;
+                top: -21px;
+                left: 94px;
+            }
+            .header__top__list{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 96px;
+                li{ 
+                    margin-left: 21px;  
+                    margin-top: 30px;
+                    a{
+                        color: $seco__color;
+                        @include all_font_setings(600,30px,45px);
+                    }
+                }
+            }
+        }
+    }
+    .header__title {
+        @include wh(370px,330px);
+        margin: auto;
+        margin-top: 116px;
+        .header__title__title {
+            @include all_font_setings(700,40px,57px);
+            @include wh(350px,auto);
+            text-align: center;
+            color: $bold__color;
+        }
+        .header__title__discriptioms {
+            @include wh(370px,auto);
+            color: $seco__color;
+            margin-top: 35px;
+            text-align: center;
+        }
+        .header__title__buttons {
+            margin-top: 40px;
+            width: 354px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header__title__buttons__get {
+            border-radius: 37px;    
+            @include wh(187px,48px);
+            @include all_font_setings(700,14px,28px);
+            background-color: $accent__color;
+            color: $wh__color;
+            margin-bottom: 25px;
+        }
+        .header__title__buttons__learn {
+            @include all_font_setings(700,14px,28px);
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #00A0C1;
+            border: 1px solid #00A0C1;
+            @include wh(157px,48px);
+            border-radius: 37px;
+            background-color: $wh__color;
+        }
+    
+    }
+    .header__footer{
+        display: grid;
+        grid-template-columns:328px;
+        grid-template-rows: repeat(3,210px);
+        width: 329px;
+        height: 690px;
+        margin: auto;
+        gap: 65px;
+        margin-bottom: 53px;
+    
+        .header__footer__block{
+            background-color: white;
+            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+            margin: auto;
+            
+        }
+        .header__footer__block__I{ 
+            padding: 35px 40px;   
+                h3{
+                    margin-top: 13px;
+                    margin-bottom: 10px;
+                    @include all_font_setings(700,24px,32px);
+                    color: $bold__color;
+                }
+                p{
+                    @include all_font_setings(500,14px,20px);
+                    color: $seco__color;
+                }
+            }
+            .header__footer__block__II{ 
+                padding: 35px 40px;   
+                h3{
+                    width: 228px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    @include all_font_setings(700,24px,32px);
+                    color: $bold__color;
+                }
+                p{
+                    @include all_font_setings(500,14px,20px);
+                    color: $seco__color;
+                } 
+            }
+            .header__footer__block__III{  
+                padding: 35px 40px;
+                background-color: $back__secondary;
+                h3{
+                    width: 228px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    @include all_font_setings(700,24px,32px);
+                    color: $wh__color;
+                }
+                p{
+                    @include all_font_setings(500,14px,20px);
+                    color: $wh__color;
+                } 
+            }
+    }
+    .header__betwen{
+       display: none;
+    }
+}
+@media(max-width: 500px){
+     .header__title__title, .header__title__discriptioms , .header__title__buttons,.header__footer{
+         margin: auto;
+     }
 }

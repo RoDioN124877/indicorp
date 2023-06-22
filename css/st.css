@@ -243,7 +243,178 @@ button {
 
 @media (max-width: 400px) {
   .header {
+    max-width: 414px;
+    height: 2026px;
+    background-image: url(../../img/header/back__ground.png);
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  .header__top {
+    width: 370px;
+    height: 457px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .header__top .header__top__nav {
+    width: 123px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+  }
+  .header__top .header__top__nav .header__nav__bar {
+    position: relative;
+    top: -21px;
+    left: 94px;
+  }
+  .header__top .header__top__nav .header__top__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+  }
+  .header__top .header__top__nav .header__top__list li {
+    margin-left: 21px;
+    margin-top: 30px;
+  }
+  .header__top .header__top__nav .header__top__list li a {
+    color: #737373;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .header__title {
+    width: 370px;
+    height: 330px;
+    margin: auto;
+    margin-top: 116px;
+  }
+  .header__title .header__title__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    color: #252B42;
+  }
+  .header__title .header__title__discriptioms {
+    width: 370px;
+    height: auto;
+    color: #737373;
+    margin-top: 35px;
+    text-align: center;
+  }
+  .header__title .header__title__buttons {
+    margin-top: 40px;
+    width: 354px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title .header__title__buttons__get {
+    border-radius: 37px;
+    width: 187px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    background-color: #FFA62B;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  .header__title .header__title__buttons__learn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #00A0C1;
+    border: 1px solid #00A0C1;
+    width: 157px;
+    height: 48px;
+    border-radius: 37px;
+    background-color: #fff;
+  }
+  .header__footer {
+    display: grid;
+    grid-template-columns: 328px;
+    grid-template-rows: repeat(3, 210px);
+    width: 329px;
+    height: 690px;
+    margin: auto;
+    gap: 65px;
+    margin-bottom: 53px;
+  }
+  .header__footer .header__footer__block {
+    background-color: white;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    margin: auto;
+  }
+  .header__footer .header__footer__block__I {
+    padding: 35px 40px;
+  }
+  .header__footer .header__footer__block__I h3 {
+    margin-top: 13px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #252B42;
+  }
+  .header__footer .header__footer__block__I p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+  }
+  .header__footer .header__footer__block__II {
+    padding: 35px 40px;
+  }
+  .header__footer .header__footer__block__II h3 {
+    width: 228px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #252B42;
+  }
+  .header__footer .header__footer__block__II p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+  }
+  .header__footer .header__footer__block__III {
+    padding: 35px 40px;
+    background-color: #00A0C1;
+  }
+  .header__footer .header__footer__block__III h3 {
+    width: 228px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+  }
+  .header__footer .header__footer__block__III p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+  }
+  .header__betwen {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__title__title, .header__title__discriptioms, .header__title__buttons, .header__footer {
+    margin: auto;
   }
 }
 
@@ -426,6 +597,8 @@ button {
     grid-template-columns: 209px;
     grid-template-rows: repeat(4, 268px);
     margin: auto;
+    width: 241px;
+    height: 1000px;
   }
   .why__conteiner .why__block {
     display: flex;
