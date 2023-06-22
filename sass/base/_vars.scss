@@ -1,0 +1,17 @@
+$seco__color:#737373;
+$wh__color:#fff;
+$accent__color:#FFA62B;
+$bold__color:#252B42;
+$back__secondary:#00A0C1;
+$back__main:#f3f3f3;
+$footer__back__color:#16697A;
+$all__fonts:'Montserrat', 'sans-serif';
+@mixin all_font_setings ($fw,$fs,$lh){
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+@mixin wh ($wd,$hd){
+    width: $wd;
+    height: $hd;
+}

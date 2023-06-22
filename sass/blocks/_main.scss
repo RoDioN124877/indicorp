@@ -1,0 +1,244 @@
+.why__conteiner {
+    @include wh(1440px,526px);
+    margin: auto;
+        background-color: $back__main;
+        .WHY__CHOOS__US {
+        h2{
+            @include all_font_setings(700,40px,57px);
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 10px;
+
+
+        }
+        p{
+            @include all_font_setings(500,14px,20px);
+            color: #737373;
+            width: 511px;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+    .why__conteiner__blocks {
+        display: grid;
+        grid-template-columns: repeat(4,268px);
+        grid-template-rows: 209px;
+        margin: auto;
+        @include wh(1049px,209px);
+    }
+    .why__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 40px;
+        gap: 10px;
+        background-color: #fff;
+        margin-left: 38px;
+        h2{
+            @include all_font_setings(700,40px,57px);
+        }
+        p{
+            @include all_font_setings(700,16px,24px);
+            color: #737373;
+        }
+
+    }
+    .why__block2{
+        img{
+            margin-top: 10px;
+        }
+        h2{
+            margin-top: 7px;
+        }
+        p{
+            width: 176px;
+        }
+    }
+    .why__block3{
+        p{
+            width: 153px;
+        }
+    }
+    .why__block4{
+        img{
+            margin-top: 5px;
+            margin-bottom: 3px;
+        }
+    }
+   
+}
+.Practice__conteiner{
+    @include wh(1440px,700px);
+    margin: auto;
+
+    background-color: pink;
+    .Practice__conteiner__txt{
+        @include wh(864px,auto);
+        margin: auto;
+        padding-top: 125px;
+        h2{
+            @include all_font_setings(700,40px,57px);
+            text-align: center        
+        }
+        p{
+            @include all_font_setings(500,14px,20px);
+            @include wh(470px,auto);
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+        }
+        margin-bottom: 45px;
+    }
+    .Practice__conteiner__blocks{
+        display: grid;
+        grid-template-columns: repeat(4,238px);
+        grid-template-rows  : 341px;
+        margin: auto;
+        gap: 30px;
+        @include wh(1049px,342px);
+        .Practice__conteiner__block{
+            background-color: $wh__color;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                margin-left: -30px;
+                margin-right: -30px;
+                margin-bottom: -30px
+            }
+            h5{
+                @include all_font_setings(700,16px,24px);
+                margin-bottom: -30px;
+            }
+            p{
+                color: #737373;
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+
+    .why__conteiner {
+            @include wh(250px,1421px);
+            background-color: $back__main; 
+            margin: auto;
+            .WHY__CHOOS__US {
+                h2{
+                    @include all_font_setings(700,40px,57px);
+                    @include wh(252px,204px);
+                    padding:0px;
+                    margin: 0px;
+                }
+                p{
+                    @include all_font_setings(500,14px,20px);
+                    color: #737373;
+                    text-align: center;
+                    @include wh(225px,80px);
+                    margin: 0px;
+                }
+            }
+        .why__conteiner__blocks {
+            display: grid;
+            grid-template-columns:209px;
+            grid-template-rows: repeat(4,268px);
+            margin: auto;
+            
+        }
+        .why__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 40px;
+            gap: 10px;
+            background-color: #fff;
+            margin-left: 38px;
+            h2{
+                @include all_font_setings(700,40px,57px);
+            }
+            p{
+                @include all_font_setings(700,16px,24px);
+                color: #737373;
+            }
+    
+        }
+        .why__block2{
+            img{
+                margin-top: 10px;
+            }
+            h2{
+                margin-top: 7px;
+            }
+            p{
+                width: 176px;
+            }
+        }
+        .why__block3{
+            p{
+                width: 153px;
+            }
+        }
+        .why__block4{
+            img{
+                margin-top: 5px;
+                margin-bottom: 3px;
+            }
+        }
+       
+    }
+    .Practice__conteiner{
+    @include wh(330px,1739px);
+    margin: auto;
+
+    background-color: pink;
+    .Practice__conteiner__txt{
+        margin: auto;
+        padding-top: 125px;
+        @include wh(330px,300px);
+        h2{
+            @include all_font_setings(700,40px,57px);
+            text-align: center;
+            @include wh(180px,114px);   
+            margin: auto;
+   
+        }
+        p{
+            @include all_font_setings(500,14px,20px);
+            @include wh(225px,80px);
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+        }
+        margin-bottom: 45px;
+    }
+    .Practice__conteiner__blocks{
+        @include wh(241px,auto);
+        display: grid;
+        grid-template-columns: 230px;
+        grid-template-rows:repeat(4,341px) ;
+        margin: auto;
+        gap: 30px;
+        .Practice__conteiner__block{
+            background-color: $wh__color;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                margin-left: -30px;
+                margin-right: -30px;
+                margin-bottom: -30px
+            }
+            h5{
+                @include all_font_setings(700,16px,24px);
+                margin-bottom: -30px;
+            }
+            p{
+                color: #737373;
+            }
+        }
+    }
+}
+}
