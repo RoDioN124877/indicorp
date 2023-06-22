@@ -1,3 +1,6 @@
+body{
+    background-color: $back__main;
+}
 .why__conteiner {
     @include wh(1440px,526px);
     margin: auto;
@@ -118,7 +121,190 @@
         }
     }
 }
+.about__conteiner{
+    width: 1050px;
+    margin: auto;
+    margin: auto;
+    padding-bottom: 100px;
+    .about__conteiner__txt{
+        @include wh(511px,169px);
+        margin: auto;
+        text-align: center;
+        h2{
+            @include all_font_setings(700,40px,57px);
+        }
+        p{
+            color: #737373;
+            @include all_font_setings(500,14px,20px);
 
+        }
+        margin-bottom: 100px;
+    }
+    .about__conteiner__row{
+        display: flex;
+        justify-content: space-between;
+        .about__conteiner__row__txt{
+            h2{
+                @include all_font_setings(700,40px,57px);
+                @include wh(324px,114px);
+                
+            }
+            p{
+                color: #737373;
+                @include all_font_setings(500,14px,20px);
+                @include wh(330px,114px);
+    
+            }  
+        }
+        .about__conteiner__row__quick{
+            display: flex;
+            align-items: flex-start;
+            .about__conteiner__row__quick__txt{
+                margin-left: 20px;
+                margin-bottom: 30px;
+                h5{
+                    @include all_font_setings(700,16px,24px);
+                    width: 277px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    @include all_font_setings(600,14px,24px);
+                }
+            }
+        }
+    }
+}
+.client__conteiner{
+    @include wh(1054px,175px);
+    margin: auto;
+    .clients__img{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+
+    }
+    .form__sub{
+        position: relative;
+        z-index: 1;
+        @include wh(986px,124px);
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0px;
+        background-color: $footer__back__color;
+        align-items: center;
+        margin-top: 20px;
+        h3{
+            @include all_font_setings(700,24px,32px);
+            width: 258px;
+            color: $wh__color;
+        }
+        input{
+            @include wh(438px,56px);
+            background-color: #F9F9F9;
+            border: 1px solid #E6E6E6;
+            border-radius: 5px 0px 0px 5px;
+            padding: 0 0 0 20px ;
+        }
+        button{
+            @include wh(117px,58px);
+            background-color: $accent__color;
+            border: 1px solid #E6E6E6;
+            border-left: 0;
+            border-radius: 0px 5px 5px 0px;
+            padding: 0;
+            margin-left: -10px;
+        }
+    }
+    
+}
+.client__conteiner__footer{
+        background-color: #252B42;
+        width:1440px;
+        height:77px;
+        margin: auto;
+    }
+.touch__conteiner{
+    padding-top: 80px;
+    padding-bottom: 148px;
+    .touch__conteiner__txt{
+        margin: auto;
+        width: 864px;
+        margin-bottom: 80px;
+        h2{
+            width: 267px;
+            margin: auto;
+            @include all_font_setings(700,40px,57px);
+        }
+        p{
+            width: 470px;
+            @include all_font_setings(500,14px,20px);
+            text-align: center;
+            color: $seco__color;
+            margin: auto;
+        }
+    }
+    .touch__conteiner__blocks{
+        width:985px;
+        height:393px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .touch__conteiner__block{
+        padding: 53px 50px 52px 50px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        h6{
+            @include all_font_setings(600,14px,24px);
+        }
+        h5{
+            @include all_font_setings(700,16px,24px);
+            width: 102px;
+        }
+        button{
+            @include all_font_setings(600,14px,24px);
+            @include wh(160px,44px);
+            color: $accent__color;
+            border: 1px solid $accent__color;
+            border-radius: 5px;
+            background-color: #fff;
+            
+        }
+    }
+    .touch__conteiner__block1{
+        @include wh(327px,333px);
+    }
+    .touch__conteiner__block2{
+        @include wh(329px,393px);
+        background-color: #252B42;
+        h6{
+            @include all_font_setings(600,14px,24px);
+            color: #fff;
+        }
+        h5{
+            @include all_font_setings(700,16px,24px);
+            width: 102px;
+            color: #fff;
+        }
+        button{
+            @include all_font_setings(600,14px,24px);
+            @include wh(160px,44px);
+            color: $wh__color;
+            border: 1px solid $wh__color;
+            border-radius: 5px;
+            background-color: #252B42;
+            
+        }
+    }
+    .touch__conteiner__block3{
+        @include wh(329px,333px);
+    }
+    
+}
 @media(max-width: 400px) {
 
     .why__conteiner {
@@ -190,8 +376,9 @@
        
     }
     .Practice__conteiner{
-    @include wh(330px,1800px);
+    @include wh(330px,1870px);
     margin: auto;
+    margin-bottom: 70px;
 
     background-color: pink;
     .Practice__conteiner__txt{
@@ -241,5 +428,197 @@
             }
         }
     }
+}
+.about__conteiner{
+    width: 329px;
+    padding-bottom: 100px;
+    margin: auto;
+    padding-top: 100px;
+    .about__conteiner__txt{
+        @include wh(324px,261px);
+        margin: auto;
+        text-align: center;
+        h2{
+            @include all_font_setings(700,40px,57px);
+        }
+        p{
+            color: #737373;
+            @include all_font_setings(500,14px,20px);
+
+        }
+        margin-bottom: 100px;
+    }
+    .about__conteiner__row{
+        display: flex;
+        flex-direction: column;      
+        iframe{
+            width: 333px;
+            height: 443px;
+            margin-bottom: 52px
+        }  
+        .about__conteiner__row__txt{
+            h2{
+                @include all_font_setings(700,40px,57px);
+                @include wh(324px,114px);
+                
+            }
+            p{
+                color: #737373;
+                @include all_font_setings(500,14px,20px);
+                @include wh(330px,114px);
+    
+            }  
+        }
+        .about__conteiner__row__quick{
+            display: flex;
+            align-items: flex-start;
+            .about__conteiner__row__quick__txt{
+                margin-left: 20px;
+                margin-bottom: 30px;
+                h5{
+                    @include all_font_setings(700,16px,24px);
+                    width: 277px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    @include all_font_setings(600,14px,24px);
+                }
+            }
+        }
+    }
+}
+.client__conteiner{
+    @include wh(152px,752px);
+    margin: auto;
+    .clients__img{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        flex-direction: column;
+        img{
+            margin-bottom: 30px;
+        }
+
+    }
+    .form__sub{
+        position: relative;
+        z-index: 1;
+        @include wh(412px,212px);
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+        background-color: $footer__back__color;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: -140px;
+        h3{
+            @include all_font_setings(700,24px,32px);
+            width: 258px;
+            color: $wh__color;
+            text-align: center
+        }
+        input{
+            @include wh(220px,56px);
+            background-color: #F9F9F9;
+            border: 1px solid #E6E6E6;
+            border-radius: 5px 0px 0px 5px;
+            padding: 0 0 0 20px ;
+        }
+        button{
+            @include wh(117px,58px);
+            background-color: $accent__color;
+            border: 1px solid #E6E6E6;
+            border-left: 0;
+            border-radius: 0px 5px 5px 0px;
+            padding: 0;
+            margin-left: -10px;
+        }
+    }
+    
+}
+.client__conteiner__footer{
+    display: none;
+}
+.touch__conteiner{
+    padding-bottom: 148px;
+    .touch__conteiner__txt{
+        margin: auto;
+        width: 310px;
+        margin-bottom: 80px;
+        h2{
+            width: 267px;
+            text-align: center;
+            @include all_font_setings(700,40px,57px);
+        }
+        p{
+            width: 264px;
+            @include all_font_setings(500,14px,20px);
+            text-align: center;
+            color: $seco__color;
+            margin: auto;
+        }
+    }
+    .touch__conteiner__blocks{
+        width:329px;
+        height:1119px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .touch__conteiner__block{
+        padding: 53px 50px 52px 50px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        h6{
+            @include all_font_setings(600,14px,24px);
+        }
+        h5{
+            @include all_font_setings(700,16px,24px);
+            width: 102px;
+        }
+        button{
+            @include all_font_setings(600,14px,24px);
+            @include wh(160px,44px);
+            color: $accent__color;
+            border: 1px solid $accent__color;
+            border-radius: 5px;
+            background-color: #fff;
+            
+        }
+    }
+    .touch__conteiner__block1{
+        @include wh(327px,333px);
+    }
+    .touch__conteiner__block2{
+        @include wh(329px,393px);
+        background-color: #252B42;
+        h6{
+            @include all_font_setings(600,14px,24px);
+            color: #fff;
+        }
+        h5{
+            @include all_font_setings(700,16px,24px);
+            width: 102px;
+            color: #fff;
+        }
+        button{
+            @include all_font_setings(600,14px,24px);
+            @include wh(160px,44px);
+            color: $wh__color;
+            border: 1px solid $wh__color;
+            border-radius: 5px;
+            background-color: #252B42;
+            
+        }
+    }
+    .touch__conteiner__block3{
+        @include wh(329px,333px);
+    }
+    
 }
 }
